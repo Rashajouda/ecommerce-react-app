@@ -24,7 +24,7 @@ menuRef.current.classList.toggle("nav-menu-visible");
            </div>
            <div  className="wrapper-dropdown"><img className='nav-dropdown' src={nav_dropdown} alt="" onClick={dropDown_toggle}/></div>
             <ul ref={menuRef} className="nav-menu">
-                <li onClick={()=>{setMenu('shop')}}><Link style={{textDecoration:'none'}} to='/'>Shop</Link> {menu==='shop'?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu('shop')}}><Link style={{textDecoration:'none'}} to='/ecommerce-react-app'>Shop</Link> {menu==='shop'?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu('men')}}><Link style={{textDecoration:'none'}}  to='/men'>Men</Link> {menu==='men'?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu('women')}}><Link style={{textDecoration:'none'}}  to='/women'>Woman</Link> {menu==='women'?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu('kids')}}><Link style={{textDecoration:'none'}}  to='/kids'>Kids</Link> {menu==='kids'?<hr/>:<></>}</li>
