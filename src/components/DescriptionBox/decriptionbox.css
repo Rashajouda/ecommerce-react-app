@@ -1,0 +1,42 @@
+.description-box {
+    width: 85%;
+    margin: 70px auto;
+}
+
+.description-box-navigator{
+    display: flex;
+}
+
+.description-box-nav-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+   font-weight: 600;
+   width: 171px;
+   height: 70px;
+   border: 1px solid #d0d0d0;
+}
+
+.description-box-nav-box.fade {
+    background-color: #fbfbfb;
+    color: #555;
+}
+
+.description-box-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #dedede;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+@media (max-width:800px) {
+    .description-box {
+        width: 92%;
+    }
+    .description-box-description {
+        font-size: 14px;
+    }
+}
