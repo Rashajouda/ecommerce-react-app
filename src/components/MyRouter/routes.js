@@ -9,7 +9,7 @@ import kids_banner from '../assets/banner_kids.png'
 const ROUTES = [
     {
         index:true,
-        path:'/',
+        path:'/ecommerce-react-app',
         element:<Shop/>
     },
     {

@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import hand_icon from '../assets/hand_icon.png'
 import arrow_icon from '../assets/arrow.png'
 import hero_img from '../assets/hero_image.png'
 import './hero.css';
 function Hero(props) {
+  const [loading ,setLoading] =useState(true)
+  useEffect(()=>{
+    setLoading(false)
+  },[])
+
     return (
-        <div className='hero'>
+       <>
+       {loading?<h1>Loading...</h1>: <div className='hero'>
             <div className="hero-left">
                 <h2>NEW ARRIVALS ONLY</h2>
               <div>
@@ -24,7 +30,8 @@ function Hero(props) {
             <div className="hero-right">
                 <img src={hero_img} alt='sdv'/>
             </div>
-        </div>
+        </div>}
+       </>
     );
 }
 
